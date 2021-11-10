@@ -1,0 +1,42 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page23320268.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^enter$ page22379969.html [NC]
+RewriteRule ^enter/$ page22379969.html [NC]
+
+RewriteRule ^masterclass$ page22479792.html [NC]
+RewriteRule ^masterclass/$ page22479792.html [NC]
+
+RewriteRule ^masterclass2110$ page22574511.html [NC]
+RewriteRule ^masterclass2110/$ page22574511.html [NC]
+
+RewriteRule ^mk2110$ page22582952.html [NC]
+RewriteRule ^mk2110/$ page22582952.html [NC]
+
+RewriteRule ^podarok2110$ page22583476.html [NC]
+RewriteRule ^podarok2110/$ page22583476.html [NC]
+
+RewriteRule ^podarokvk$ page22583880.html [NC]
+RewriteRule ^podarokvk/$ page22583880.html [NC]
+
+RewriteRule ^podarokig$ page22583962.html [NC]
+RewriteRule ^podarokig/$ page22583962.html [NC]
+
+RewriteRule ^scool_meneg$ page23260150.html [NC]
+RewriteRule ^scool_meneg/$ page23260150.html [NC]
+
+RewriteRule ^gaid$ page23286349.html [NC]
+RewriteRule ^gaid/$ page23286349.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3464-3636-4035-b639-303139613163/favicon.ico [R=302,L]
+
